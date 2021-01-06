@@ -18,16 +18,25 @@ import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import kotlinx.android.synthetic.main.activity_web_view.*
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
 
 class WebViewActivity : AppCompatActivity(){
 
     private val URL = "https://google.com"
     private var isAlreadyCreated = false
 
-
+   lateinit var mAdView : AdView
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_view)
+       MobileAds.initialize(this) {}
+
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
 
         startLoaderAnimate()
 
