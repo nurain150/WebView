@@ -20,6 +20,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".WebViewActivity" />
+
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-39402560999425443347511713"/>
+            
+    </application>
+
     </application>
 
 </manifest>
