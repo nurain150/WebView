@@ -56,6 +56,15 @@ class WebViewActivity : AppCompatActivity(){
                         this@WebViewActivity)
             }
         }
+        
+val bottomify = findViewById<BottomifyNavigationView>(R.id.bottomify_nav)
+        bottomify.setOnNavigationItemChangedListener(object : OnNavigationItemChangeListener {
+            override fun onNavigationItemChanged(navigationItem: BottomifyNavigationView.NavigationItem) {
+                Toast.makeText(this@MainActivity,
+                        "Selected item at index ${navigationItem.position}",
+                        Toast.LENGTH_SHORT).show()
+            }
+        })
 
         webView.loadUrl(URL)
         
