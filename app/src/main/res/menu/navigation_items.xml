@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/action_home"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_home"
         android:checked="true"
         android:title="@string/Home" />
     <item
         android:id="@+id/action_browse"
-        android:icon="@drawable/ic_speaker_group_black_24dp"
-        android:title="@string/Sports" />
+        android:icon="@drawable/ic_browse"
+        android:title="@string/Browse" />
     <item
         android:id="@+id/action_search"
-        android:icon="@drawable/ic_search_black_24dp"
+        android:icon="@drawable/ic_searh"
         android:title="@string/Search" />
     <item
         android:id="@+id/action_radio"
-        android:icon="@drawable/ic_radio_black_24dp"
-        android:title="@string/Nigeria" />
+        android:icon="@drawable/ic_sport"
+        android:title="@string/Sports" />
 </menu>
