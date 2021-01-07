@@ -49,7 +49,7 @@ class WebViewActivity : AppCompatActivity(){
             }
 
             override fun onReceivedError(view: WebView?, request: WebResourceRequest?, error: WebResourceError?) {
-                super.onReceivedError(view, request, error)
+                super.onReceivedError(view, request, error) {
                 endLoaderAnimate()
                 showErrorDialog("Error",
                         "No internet connection. Please check your connection.",
@@ -58,6 +58,7 @@ class WebViewActivity : AppCompatActivity(){
         }
 
         webView.loadUrl(URL)
+        
     }
 
     override fun onResume() {
