@@ -35,6 +35,9 @@ class WebViewActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_view)
+var action : ActionBar  = getSupportActionBar()
+ action.setDisplayShowHomeEnabled(true)
+ action.setIcon(R.drawable.my_icon)
        MobileAds.initialize(this) {}
 
         mAdView = findViewById(R.id.adView)
