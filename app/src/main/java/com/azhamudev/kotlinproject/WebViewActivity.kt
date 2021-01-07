@@ -26,7 +26,10 @@ class WebViewActivity : AppCompatActivity(){
 
     private val URL = "https://google.com"
     private var isAlreadyCreated = false
-
+    private val home=""
+    private val browse=""
+    private val search = ""
+    private val sport = ""
    lateinit var mAdView : AdView
     
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,12 +60,18 @@ class WebViewActivity : AppCompatActivity(){
             }
         }
         
-val bottomify = findViewById<BottomifyNavigationView>(R.id.bottomify_nav)
-        bottomify.setOnNavigationItemChangedListener(object : OnNavigationItemChangeListener {
+  val bottomify = findViewById<BottomifyNavigationView>(R.id.bottomify_nav)
+       
+  bottomify.setOnNavigationItemChangedListener(object : OnNavigationItemChangeListener {
             override fun onNavigationItemChanged(navigationItem: BottomifyNavigationView.NavigationItem) {
-                Toast.makeText(this@MainActivity,
-                        "Selected item at index ${navigationItem.position}",
-                        Toast.LENGTH_SHORT).show()
+           when {navigationItem.position} {
+             1 -> webView.loadUrl(home)
+             2 -> WebView.loadUrl(browse)
+             3 -> webView.loadUrl(sport)
+             4 -> WebView.loadUrl(search)
+     
+           }
+                        
             }
         })
 
