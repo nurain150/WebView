@@ -59,7 +59,7 @@ class WebViewActivity : AppCompatActivity(){
                         this@WebViewActivity)
             }
         }
-        
+webView.loadUrl(URL)
   val bottomify = findViewById<BottomifyNavigationView>(R.id.bottomify_nav)
        
   bottomify.setOnNavigationItemChangedListener(object : OnNavigationItemChangeListener {
@@ -69,7 +69,7 @@ class WebViewActivity : AppCompatActivity(){
              2 -> WebView.loadUrl(browse)
              3 -> webView.loadUrl(sport)
              4 -> WebView.loadUrl(search)
-     
+             else -> Log.d("Non","None")
            }
                         
             }
