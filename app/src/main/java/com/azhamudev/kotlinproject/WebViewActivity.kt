@@ -26,10 +26,10 @@ class WebViewActivity : AppCompatActivity(){
 
     private val URL = "https://google.com"
     private var isAlreadyCreated = false
-    private val home=""
-    private val browse=""
-    private val search = ""
-    private val sport = ""
+    private val home="http://rxrasheedblogg.com/?m=1"
+    private val browse="http://rxrasheedblogg.com/search/label/World?m=1"
+    private val search =:"http://google.com.ng/search?q=site%3Arxrasheesblog.com"
+    private val sport="http://rxrasheedblogg.com/search/label/Sports?m=1"
    lateinit var mAdView : AdView
     
     override fun onCreate(savedInstanceState: Bundle?) {
