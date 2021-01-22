@@ -33,7 +33,7 @@
       android:layout_centerHorizontal="true"
       android:layout_alignParentBottom="true"
       ads:adSize="BANNER"
-      ads:adUnitId="ca-app-pub4461918422927263/3718813616"/>
+      ads:adUnitId="ca-app-pub-2318887960463570/1579681536"/>
   </com.google.android.gms.ads.AdView>
 <com.volcaniccoder.bottomify.BottomifyNavigationView
         android:id="@+id/bottomify_nav"
